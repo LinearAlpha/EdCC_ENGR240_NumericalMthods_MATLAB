@@ -1,3 +1,4 @@
+clear, clc
 %beam dlflection problem
 L = 4; %lenght of thw beam
 E = 70E9; %modulus of elasticity
