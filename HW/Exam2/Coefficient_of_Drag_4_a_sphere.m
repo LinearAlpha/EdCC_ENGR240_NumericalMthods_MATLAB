@@ -1,4 +1,4 @@
-close, clear, clc
+close,clear, clc
 %read in the raw data
 rawData=xlsread('WindTunnelData','A2:B131');
 plot(rawData(:, 1), rawData(:, 2))
