@@ -1,4 +1,5 @@
 function [thrust, imp] = Thrust(t, h)
+% Author: Minpyo Kim
 % Read orifginal data of thrust ans creat linear spline interpolation with
 % evenly spaced time.
 % Input variable:
@@ -15,7 +16,7 @@ clear Motor;
 numOriginal = length(tOriginal);
 numNewTime = length(t);
 thrust = zeros(1, size(t, 2));
-parfor i = 1:numNewTime
+for i = 1:numNewTime
     for j = 2:numOriginal
         if t(i) < tOriginal(j)
             tmp = (t(i) - tOriginal(j)) / (tOriginal(j - 1) - tOriginal(j)) ...

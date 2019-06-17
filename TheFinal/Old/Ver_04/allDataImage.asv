@@ -1,0 +1,29 @@
+function [ ] = allDataImage()
+load ('forGraph')
+
+figure('Name', 'Thrust')
+plot(t, thrust)
+title("Thrust vs Time")
+xlabel("Time (s)"), ylabel("Thrust (N)")
+grid on;
+
+figure('Name',  'Propellant Mass Data')
+plot(t, mProp);
+title("Propellant vs Time")
+xlabel("Time (s)"), ylabel("Propellant (kg)")
+grid on;
+
+figure('Name',  'velocity')
+plot(tNew, v);
+title("Velocity vs Time")
+xlabel("Time (s)"), ylabel("velocity (m/s)")
+grid on;
+
+figure('Name',  'height')
+plot(tNew, v);
+title("Height vs Time")
+xlabel("Time (s)"), ylabel("hight (m)")
+grid on;
+
+figure('Name', 'dreg force')
+plot(tNew, Drag_Force(Cd, S, v, y))
