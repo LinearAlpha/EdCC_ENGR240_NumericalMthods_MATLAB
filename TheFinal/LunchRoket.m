@@ -1,6 +1,6 @@
-% This script file is created for ENGR 240 final projec thay is simulating the
-% thurst, impuls of the rokeck by the time. Also, it is calculating the velocity
-% and altitude of the rokect.
+% This script file is created for ENGR 240 final projec porpose is simulating 
+% the thurst, impuls of the rokeck by the time. Also, it is calculating the 
+% velocity and altitude of the rokect.
 % ==============================================================================
 % ******************************** Waring **************************************
 % This program take more then 2 minutes to perforing all the calcuation. All the
